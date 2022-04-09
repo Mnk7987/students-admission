@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url(/static/web-1012467.jpg);
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+
+    input {
+      display: block;
+      width: 300px;
+      margin: 5px;
+      margin-left: 10px;
+      height: 30px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      font-style: bold;
+      border-bottom: 1px solid black;
+      background: rgba(253, 250, 250, 0.541);
+      text-align: center;
+    }
+
+    form {
+
+      margin: 10px;
+      text-align: center;
+    }
+
+    button {
+
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      background-color: rgba(0, 0, 255, 0.562);
+      border-radius: 5%;
+      border: none;
+      color: white;
+    }
+
+    ::placeholder {
+
+      color: black;
+      font: bold;
+
+    }
+
+    label {
+
+      color: white;
+      font-size: 200%;
+      font-weight: 100;
+      font: bold;
+    }
+
+    nav {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      margin-top: 20px;
+
+    }
+
+    nav ul {
+      flex: 1;
+      text-align: right;
+      padding-left: 200px;
+      margin-right: -450px;
+      margin-top: -120px;
+
+    }
+
+    nav ul li {
+
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+
+    }
+
+    nav ul li a::after {
+      content: '';
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translate(-50%);
+      background: #fff;
+      transition: width 0.3s;
+    }
+
+    nav ul li a:hover::after {
+      width: 50%;
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="name">
+      <nav>
+      
+        <ul>
+            <li><a href="about">About Us </a></li>
+            <li><a href="signin">Sign In</a></li>
+            <li><a href="contactus">Contact Us</a></li>
+            <li><a href="courses">Courses</a></li>
+
+        </ul>
+        </nav>
+
+
+
+
+
+
+      <form id="name" method="post">
+
+
+
+
+        <label>Contact Us</label><br><br>
+
+        <input type="text" name="name" id="name" placeholder=" Your Name"><br>
+
+        <input type="text" name="Phone Number" id="name" placeholder="Phone Number"><br>
+
+        <input type="email" name="email" id="name" placeholder=" E-mail id"><br>
+
+        <input type="text" name="desc" id="name" placeholder="Your Message"><br>
+
+
+
+
+
+
+
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

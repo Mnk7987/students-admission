@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body{
+            
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(/static/web-1012467.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;       
+        }
+        .heading{
+           
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+            border: 5px solid white;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            width: 400px;
+            height:50px;
+            text-align: center;
+            font-size: 40px;
+            font-weight:300;
+            color: black;
+        
+          
+    }
+    
+    
+         
+       
+        .item{
+            border: 2px solid black;
+            box-shadow: 6px 5px 5px ;
+            display: inline-block;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            margin-left: 115px;
+            margin-bottom: 100px;
+            border-radius: 4px;
+
+
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            background-color: transparent;
+            transition: 0.5;
+
+        }
+        .item:hover{
+            box-shadow: 5px 5px 15px 3px rgb(0, 0, 2);
+            transform: scale(1.3);
+            z-index: 5;
+
+           }
+        
+        .one{
+            background-image:linear-gradient(rgba(128, 97, 97, 0.7), transparent), url(/static/c\ logo.png);
+            background-position:0px 55px;
+            background-repeat: no-repeat;
+            background-size: 100% 60% ;
+    
+            
+            
+            
+        }
+        .two{
+            background-image:linear-gradient(rgba(128, 97, 97, 0.7), transparent), url(/static/java.jpg);
+            background-position: 0px 55px ;
+            background-repeat: no-repeat;
+            background-size: 100% 60%;
+        }
+        .three{
+            background-image: linear-gradient(rgba(128, 97, 97, 0.7), transparent),url(/static/python.jpg);
+            background-position:0px 55px ;
+            background-repeat: no-repeat;
+            background-size: 100% 60%;
+        }
+        .four{
+            background-image: linear-gradient(rgba(128, 97, 97, 0.7), transparent),url(/static/react.jpg);
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size: 100% 60%;
+        }
+        .five{
+            background-image: linear-gradient(rgba(128, 97, 97, 0.7), transparent),url(/static/node.jpg);
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size: 100% 60%;
+        }
+        .six{
+            background-image: linear-gradient(rgba(128, 97, 97, 0.7), transparent),url(/static/htmlcss.jpg);
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size: 100% 60%;
+        }
+        .seven{
+            background-image: linear-gradient(rgba(128, 97, 97, 0.7), transparent),url(/static/js.jpg);
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size:100% 60%;
+        }
+        .eight{
+            background-image:linear-gradient(rgba(128, 97, 97, 0.7), transparent), url(/static/angular.jpg);
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size:100% 60%;
+        }      
+        
+        .nine{
+            background-image:linear-gradient(rgba(128, 97, 97, 0.7), transparent), url();
+            background-position:0px 55px;
+            background-repeat: no-repeat;
+            background-size:100% 60%;
+        }      
+        .ten{
+            background-image:linear-gradient(rgba(128, 97, 97, 0.7), transparent), url();
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size:100% 60%;
+        }      
+        .eleven{
+            background-image: linear-gradient(rgba(128, 97, 97, 0.7), transparent),url();
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size:100% 60%;
+        }      
+        .twelve{
+            background-image:linear-gradient(rgba(128, 97, 97, 0.7), transparent), url(/student/);
+            background-position: 0px 55px;
+            background-repeat: no-repeat;
+            background-size:100% 60%;
+        }
+        
+       
+       .sub{
+           border: 3px solid black;
+           background-color: black;
+           border-bottom: 5px solid black;
+        
+           width: 144px;
+           height: 20px;
+           color:white;
+         
+
+       }
+      button{
+          margin-top: 108px;
+          height: 25px;
+          width: 150.5px;
+          border: 1px solid black;
+          background-color: rgb(184, 41, 23);
+          background-image: url(/static/phonecall.png);
+          background-position: 1%;
+          background-repeat: no-repeat;
+          background-size:10%;  
+            
+      }
+      button:hover{
+        box-shadow: 5px 5px 15px 3px rgb(0, 0, 2);
+        transform: scale(1.1);
+        z-index: 2;
+
+       }
+      p{
+          margin-top: -1px;
+          font-size: 60%;
+          font-style:bold;
+          color: rgba(0, 0, 0);
+          font-weight: 1000;
+          background-color: aqua;
+          
+      }
+        
+        
+    </style>
+</head>
+<body>
+    {% csrf_token %}
+    <div class="heading">
+        Our Courses
+    
+</div>
+    <div class="box">
+    <a target="_blank"><div class="item one"><a href="c" target="_blank"><div class="sub">C/C++</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>6000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item two"><a href="java" target="_blank"><div class="sub">JAVA</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>8000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item three"><a href="python" target="_blank"><div class="sub">PYTHON</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>12000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item four"><a href="reactjs" target="_blank"><div class="sub">REACT JS</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>7000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item five"><a href="node" target="_blank"><div class="sub">NODE JS</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>9000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item six"><a href="htmlcss" target="_blank"><div class="sub">HTML/CSS</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>6000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item seven"><a href="javascript" target="_blank"><div class="sub">JAVASCRIPT</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>3000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+    <a target="_blank"><div class="item eight"><a href="angular" target="_blank"><div class="sub">ANGULAR JS</div></a><p><b>Duration:</b>3months <br><b>Fees:</b>7000Rs</p><a href="enquiry"><button type="button" >Enquiry Now</button></a></div>
+  
+    </div>
+    
+</body>
+</html>
